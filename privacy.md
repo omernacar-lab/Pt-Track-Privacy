@@ -1,94 +1,48 @@
-# Gizlilik Politikası
+# PT Track Gizlilik Politikası
 
-**Son Güncelleme: 12 Ocak 2026**
+**Son güncelleme:** 27 Ekim 2026
 
-## Genel Bakış
+PT Track, kişisel antrenörlerin üye, ders paketi ve tahsilat kayıtlarını yönetmesine yardımcı olur. Bu politika, uygulamanın hangi verileri neden işlediğini ve kullanıcıların bu veriler üzerindeki haklarını açıklar.
 
-PT Track uygulaması, kullanıcılarımızın gizliliğine değer verir. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve korunduğunu açıklar.
+## İşlenen veriler
 
-## Toplanan Bilgiler
+- **Hesap verileri:** E-posta adresi, Firebase kullanıcı kimliği ve isteğe bağlı profil adı.
+- **Antrenör tarafından girilen üye verileri:** Üye adı, isteğe bağlı telefon numarası, salon/online bilgisi, başlangıç tarihi, kalan ders bakiyesi, paket tutarı, tahsilat tutarı, işlem geçmişi ve serbest metin notları.
+- **Yerel tercihler:** Tema, onboarding durumu, değerlendirme istemi sayaçları, kullanıcı isterse hatırlanan e-posta adresi ve günlük hatırlatma tercihi.
+- **Kullanım bilgisi:** Uygulamayı en son kullandığınız zaman, uygulamayı kullandığınız gün sayısı, uygulama sürümü ve platform (iOS/Android). Bu bilgi hesabınızla ilişkilidir; uygulamayı iyileştirmek, destek vermek ve hangi sürümlerin kullanıldığını görmek için tutulur. Üye verisi, konum, cihaz kimliği veya reklam kimliği içermez.
 
-### Kişisel Bilgiler
-- **Kullanıcı Hesap Bilgileri**: E-posta adresi ve şifre (şifreli olarak saklanır)
-- **Profil Bilgileri**: Kullanıcı adı ve diğer profil detayları
+Uygulama kredi kartı veya banka hesabı bilgisi istemez ve saklamaz. PT Track reklam, reklam takibi veya üçüncü taraf davranış analitiği kullanmaz. Kullanım bilgisi yalnızca PT Track'in kendi Firebase veritabanında tutulur ve üçüncü taraflarla paylaşılmaz.
 
-### Üye Bilgileri
-- Üye adı, telefon numarası, e-posta
-- Üyelik başlangıç ve bitiş tarihleri
-- Ödeme bilgileri (sadece tutar ve tarih, kredi kartı bilgileri saklanmaz)
-- Spor salonu kullanım kayıtları
+Serbest metin notlarına sağlık veya sakatlık bilgisi yazılabilir. Antrenörler yalnızca hizmet için gerekli verileri girmeli; üyelerini uygun şekilde bilgilendirmekten ve gerekli hukuki dayanağı sağlamaktan sorumludur.
 
-### Otomatik Toplanan Bilgiler
-- Uygulama kullanım istatistikleri
-- Cihaz bilgileri (işletim sistemi, uygulama versiyonu)
-- Hata ve performans günlükleri
+## Verilerin kullanım amaçları
 
-## Bilgilerin Kullanımı
+Veriler; hesabı doğrulamak, cihazlar arasında senkronizasyon sağlamak, üye ve ders bakiyelerini göstermek, ödemeleri takip etmek, rapor üretmek ve uygulamanın güvenli çalışmasını sağlamak için kullanılır. Kullanıcı günlük hatırlatmaları açıkça etkinleştirirse cihazda içerik olarak üye adı, kişi sayısı veya tutar göstermeyen genel ders ve tahsilat hatırlatmaları planlanır.
 
-Topladığımız bilgileri şu amaçlarla kullanırız:
-- Üyelik yönetimi ve takibi
-- Ödeme kayıtlarının tutulması
-- Raporlama ve istatistik oluşturma
-- Uygulama performansının iyileştirilmesi
-- Teknik destek sağlanması
+## Hizmet sağlayıcılar ve veri aktarımı
 
-## Veri Saklama
+Hesap ve uygulama verileri Google Firebase Authentication ve Cloud Firestore üzerinden işlenir. Uygulama güncellemeleri Expo altyapısı üzerinden sağlanabilir. Bu sağlayıcılar verileri kendi güvenlik ve gizlilik koşulları kapsamında, uygulama işlevlerini sunmak amacıyla işler. Üye kartındaki WhatsApp butonu yalnızca antrenör dokunduğunda, üyenin telefon numarası ve hazır mesajla WhatsApp'ı açar; PT Track WhatsApp'a otomatik veri göndermez.
 
-- Tüm veriler Google Firebase güvenli bulut altyapısında saklanır
-- Veriler şifreli bağlantılar üzerinden iletilir (HTTPS/SSL)
-- Kullanıcı şifreleri kriptografik yöntemlerle şifrelenir
-- Veriler düzenli olarak yedeklenir
+## Güvenlik
 
-## Veri Paylaşımı
+- Parolalar Firebase Authentication tarafından işlenir; PT Track parolanın düz metin kopyasını saklamaz.
+- Ağ iletişimi şifreli bağlantılar üzerinden yapılır.
+- Firestore erişimi, oturum açmış kullanıcının yalnızca kendi kayıtlarına erişebilmesini hedefleyen güvenlik kurallarıyla sınırlandırılır.
 
-Kişisel bilgilerinizi üçüncü taraflarla **PAYLAŞMAYIZ**. Verileriniz yalnızca:
-- Hukuki zorunluluklar durumunda
-- Kullanıcının açık rızası ile
-paylaşılabilir.
+Hiçbir elektronik sistem mutlak güvenlik garantisi veremez. Bir güvenlik sorunu fark edilirse aşağıdaki iletişim adresine bildirilmelidir.
 
-## Veri Güvenliği
+## Saklama ve silme
 
-Verilerinizin güvenliği için:
-- Firebase Authentication ile güvenli kimlik doğrulama
-- Firestore güvenlik kuralları ile erişim kontrolü
-- Şifreli veri iletimi
-- Düzenli güvenlik güncellemeleri
+Bulut verileri hesap açık olduğu sürece veya kullanıcı silene kadar tutulur. Kullanıcı, uygulamadaki **Hesabı Kalıcı Olarak Sil** seçeneğiyle hesabının, ilişkili üye kayıtlarının ve kullanım bilgisinin silinmesini başlatabilir. Silme tamamlandığında PT Track'e ait yerel hesap verileri ve planlanmış bildirimler de temizlenir. Hizmet sağlayıcıların güvenlik kayıtları veya yedekleri, kendi sınırlı saklama süreleri boyunca mevcut olabilir.
 
-uygulanmaktadır.
+## Kullanıcı hakları
 
-## Kullanıcı Hakları
+Kullanıcılar yürürlükteki mevzuat kapsamında verilerine erişme, düzeltme, silme, işlemeyi kısıtlama ve veri taşınabilirliği talebinde bulunabilir. Üyelerine ait verileri PT Track'e giren antrenörler, bu kişilerin taleplerini de kendi yasal yükümlülükleri kapsamında ele almalıdır.
 
-Kullanıcılarımız aşağıdaki haklara sahiptir:
-- **Erişim Hakkı**: Kişisel verilerinize erişim talep edebilirsiniz
-- **Düzeltme Hakkı**: Yanlış veya eksik verilerin düzeltilmesini isteyebilirsiniz
-- **Silme Hakkı**: Hesabınızın ve verilerinizin silinmesini talep edebilirsiniz
-- **Veri Taşınabilirliği**: Verilerinizin size iletilmesini isteyebilirsiniz
+## Çocukların gizliliği
 
-## Çocukların Gizliliği
-
-Uygulamamız 13 yaşından küçük çocuklara yönelik değildir. Bilerek 13 yaşından küçük çocuklardan veri toplamayız.
-
-## Çerezler ve Takip Teknolojileri
-
-Uygulamamız, kullanıcı deneyimini iyileştirmek için minimal düzeyde oturum bilgisi saklar. Üçüncü taraf reklamcılık veya takip servisleri kullanmamaktayız.
-
-## Değişiklikler
-
-Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda kullanıcılarımız bilgilendirilecektir.
+PT Track profesyonel antrenörler için tasarlanmıştır ve 13 yaşından küçük çocukların doğrudan kullanımına yönelik değildir.
 
 ## İletişim
 
-Gizlilik politikamız hakkında sorularınız için:
-- **E-posta**: omer35nacar@icloud.com
-
-## Yasal Uyum
-
-Bu gizlilik politikası:
-- KVKK (Kişisel Verilerin Korunması Kanunu)
-- GDPR (General Data Protection Regulation)
-
-yönetmeliklerine uygun olarak hazırlanmıştır.
-
----
-
-**Not**: Bu gizlilik politikası PT Track mobil uygulaması için geçerlidir.
+Gizlilik veya veri talepleri için: **omernacar.lab@gmail.com**
